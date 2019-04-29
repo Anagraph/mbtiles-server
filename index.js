@@ -26,7 +26,7 @@ function getContentType(t) {
   if (t === "jpg" || t === "jpeg") {
     header["Content-Type"] = "image/jpeg";
   }
-  if (t === "pbf") {
+  if (t === "pbf" || t === "mvt") {
     header["Content-Type"] = "application/x-protobuf";
     header["Content-Encoding"] = "gzip";
   }
